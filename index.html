@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook-log in or sign up</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./indes.css" />
+
+    <!-- <link rel="stylesheet" href="./script.js" /> -->
+  </head>
+  <body>
+    <section id="home">
+      <div class="container">
+        <div class="d-flex">
+          <div class="col-sm-6 col-md-6 d-flex">
+            <div class="left_side">
+              <!-- <div class="image"> -->
+              <img
+                src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
+                alt="facebook_img"
+              />
+              <!-- <img src="./assets/facebook" alt=""> -->
+
+              <!-- </div> -->
+              <!-- <h1 style="color: rgb(85, 85, 250)">facebook</h1> -->
+              <!-- <bold> -->
+              <h2>
+                Facebook helps you connect and share with the people in your
+                life.
+              </h2>
+              <!-- </bold> -->
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <form class="form_m">
+              <div class="log_in">
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  id="user_name"
+                  placeholder="Email address or Phone number"
+                  required
+                />
+              </div>
+              <div class="log_in">
+                <input
+                  type="password"
+                  placeholder="password"
+                  id="pass_word"
+                  class="form-control form-control-lg"
+                  required
+                />
+              </div>
+              <div class= " col-sm-2 col-md-4">
+                <button class="login_button">Log in</button>
+              </div>
+              <div class="forgot_pass">Forgotten password?</div>
+              <!-- <hr>or -->
+              <hr />
+              <div class="btn">
+                <button class="btn-lg">
+                  <a href="#popup1">
+                    <!-- <a href="need to link pop-up window form">Create new account</a> -->
+                    Create new account
+                  </a>
+                </button>
+              </div>
+                
+            </form>
+            <div class="create_page">
+              <small
+                ><b class="cursor">Create a Page</b> for a celebrity,
+                brand or business.
+              </small>
+            </div>
+
+            <div id="popup1" class="overlay">
+              <div class="popup">
+                <h2>Sing Up</h2>
+                <h6>It's quick and easy.</h6>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                  <form action="./welcom.html" class="form" onsubmit="formValidate()">
+                    <div id="fullname">
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Name" 
+                        class="form-control form-control-lg"
+                        required
+                        size="10"
+                      />
+                      <input
+                        type="text"
+                        id="surname"
+                        name="surname"
+                        placeholder="Surname"
+                        class="form-control form-control-lg"
+                        size="10"
+                        required
+                      />
+                    </div>
+
+                    <input
+                      type="email"
+                      id="contact"
+                      name="contact"
+                      placeholder="Mobile Number or Email Address"
+                      class="form-control form-control-lg"
+                      required
+                    />
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      placeholder="New Password"
+                      class="form-control form-control-lg"
+                      required
+                    />
+                    <br />
+                    <div class="dob-gen"> 
+                 <div class="bod">
+                      Date of Birth?
+
+                      <!-- <label for="birthday">Date of Birth</label>
+                    <input type="date" id="birthday" name="birthday">  -->
+                      <br />
+                      <select id="dob-day" name="dob-day" required>
+                        <option value="">Day</option>
+                        <option value="">01</option>
+                        <option value="">02</option>
+                        <option value="">03</option>
+                        <option value="">04</option>
+                        <option value="">05</option>
+                        <option value="">06</option>
+                        <option value="">07</option>
+                        <option value="">08</option>
+                        <option value="">09</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                        <option value="">21</option>
+                        <option value="">22</option>
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="">25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                        <option value="">28</option>
+                        <option value="">29</option>
+                        <option value="">30</option>
+                        <option value="">31</option>
+
+                      
+                      </select>
+                      <select id="dob-month" name="dob-month" required>
+                        <option value="">Month</option>
+                        <option value="">01</option>
+                        <option value="">02</option>
+                        <option value="">03</option>
+                        <option value="">04</option>
+                        <option value="">05</option>
+                        <option value="">06</option>
+                        <option value="">07</option>
+                        <option value="">08</option>
+                        <option value="">09</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                      </select>
+
+                      <select id="dob-year" name="dob-year" required>
+                        <option value="">Year</option>
+                        <option value="">2000</option>
+                        <option value="">2001</option>
+                        <option value="">2002</option>
+                        <option value="">2003</option>
+                        <option value="">2004</option>
+                        <option value="">2005</option>
+                        <option value="">2006</option>
+                        <option value="">2007</option>
+                        <option value="">2008</option>
+                        <option value="">2009</option>
+                        <option value="">2010</option>
+                        <option value="">2012</option>
+                        <option value="">2013</option>
+                        <option value="">2014</option>
+                        <option value="">2015</option>
+                        <option value="">2016</option>
+                        <option value="">2017</option>
+                        <option value="">2018</option>
+                        <option value="">2019</option>
+                        <option value="">2020</option>
+                        <option value="">2021</option>
+                        <option value="">2022</option>
+                        <option value="">2023</option>
+
+                        
+                      </select>
+                    </div>  
+                      <br/>
+                      
+                      Gender?<br />
+                      <div class="radio-form">
+                        <div id="rbtn">
+                          <label for="female">Female</label>
+                          <input
+                            type="radio"
+                            id="female"
+                            name="gender"
+                            value="female"
+                            placeholder="female"
+                            
+                          />
+                        </div>
+                        <div id="rbtn">
+                          <label for="male">Male</label>
+                          <input
+                            type="radio"
+                            id="male"
+                            name="gender"
+                            value="male"
+                            placeholder="male"
+                           
+                          />
+                        </div>
+
+                        <div id="rbtn">
+                          <label for="custom">Custom</label>
+                          <input
+                            type="radio"
+                            id="custom"
+                            name="gender"
+                            value="custom"
+                            placeholder="custom"
+                           
+                          />
+
+                        </div>
+                      </div>
+
+                      <div class="text">
+                        
+                        <p>
+                          People who use our service may have uploaded your
+                          contact information to Facebook.
+                          <a href=""> Learn more.</a>
+                        </p>
+                        <p>
+                          By clicking Sign Up, you agree to our
+                          <a href=""> Terms, Privacy Policy </a> and
+                          <a href=""> Cookies Policy.</a><br />
+                          You may receive SMS notifications from us and can opt
+                          out at any time.
+                        </p>
+                      </div>
+                        <div>
+                         
+                        </div>
+                        <!-- <button type="signup"  class="sign_up_button" id="#popup2">
+                          Sign up
+                        </button> -->
+
+                        <button type="signup" onclick="formValidate()" class="sign_up_button" id= "signup">
+                          Sign up
+                        </button>
+                      </div>
+
+                       
+                    
+                 
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- A pop Up window when the user click signin -->
+            <div id="popup2" class="overlay">
+              <div class="popup">
+                 <h1>Wellcome</h1>
+                <a class="close" href="#">&times;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+   
+  </body>
+</html>
